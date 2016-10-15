@@ -1,0 +1,303 @@
+%	Copyright 2012 - 2015 Srinivas Kowtal (srinivaskay@gmail.com)
+%
+% Original copyright information follows below
+%
+%% start of file `template.tex'.
+%% Copyright 2006-2010 Xavier Danaux (xdanaux@gmail.com).
+%
+% This work may be distributed and/or modified under the
+% conditions of the LaTeX Project Public License version 1.3c,
+% available at http://www.latex-project.org/lppl/.
+
+\documentclass[11pt,letterpaper]{moderncv}
+
+%\usepackage{hyperref}
+\usepackage{color}
+\usepackage{fontspec}
+
+% moderncv themes
+% optional argument are 'blue' (default), 'orange', 'red', 'green', 'grey' and 'roman' (for roman fonts, instead of sans serif fonts)
+%\moderncvtheme[blue]{casual}                
+\moderncvtheme[blue]{classic}
+%\moderncvtheme[blue]{casual}                
+
+% DOCUMENT LAYOUT
+\usepackage[scale=0.85]{geometry}
+
+\setlength{\hintscolumnwidth}{2.3cm} % if you want to change the width of the column with the dates
+%\AtBeginDocument{\setlength{\maketitlenamewidth}{6cm}}  % only for the classic theme, if you want to change the width of your name placeholder (to leave more space for your address details
+\AtBeginDocument{\recomputelengths} % required when changes are made to page layout lengths
+
+% CHARACTER ENCODING
+\usepackage{xunicode}
+\usepackage{xltxtra}
+\usepackage[utf8]{inputenc}                 % replace by the encoding you are using
+\defaultfontfeatures{Mapping=tex-text}      % converts LaTeX specials (``quotes'' --- dashes
+                                            % etc.) to unicode
+% FONTS
+%\setromanfont [Ligatures={Common}, Numbers={OldStyle}]{Linux Libertine O}
+%\setmonofont[Scale=0.8]{DejaVuSansMono}
+%\setsansfont[Scale=0.9]{OptimaLTStd}
+
+% ---- CUSTOM AMPERSAND
+%\newcommand{\amper}{{\fontspec[Scale=.95]{Adobe Caslon Pro}\selectfont\itshape\&}}
+
+% ---- MARGIN YEARS
+%\newcommand{\years}[1]{\marginpar{\scriptsize #1}}
+
+% personal data
+\firstname{Muthuraj}
+\familyname{Thangavel}
+%\title{Srini Kowtal's Resume}                     % optional, remove the line if not wanted
+\address{56, Block VI, CEG Hostels, Anna University}{Chennai 600025} % optional, remove the line if not wanted
+\mobile{\texttt{+91-9655804033}}              % optional, remove the line if not wanted
+%\phone{\texttt{+91-9952361581}}               % optional, remove the line if not wanted
+%\fax{fax (optional)}                          % optional, remove the line if not wanted
+\email{muthu.raj@outlook.com}                      % optional, remove the line if not wanted
+%\extrainfo{https://github.com/zhaphod} % optional, remove the line if not wanted
+
+\homepage{muthurajt.in}                % optional, remove the line if not wanted
+%\extrainfo{Programmer} % optional, remove the line if not wanted
+%\photo[64pt]{dont_panic.png}% '64pt' is the height the picture must be resized to and 'picture' is the name of the picture file; optional, remove the line if not wanted
+%\quote{ Circuit bender, kernel hacker, robot builder, urban explorer, trombone playerer.}
+% to show numerical labels in the bibliography; only useful if you make citations in your resume
+%\makeatletter
+%\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}
+%\makeatother
+
+% bibliography with mutiple entries
+%\usepackage{multibib}
+%\newcites{book,misc}{{Books},{Others}}
+
+\nopagenumbers{}% uncomment to suppress automatic page numbering for CVs longer than one page
+%----------------------------------------------------------------------------------
+%            content
+%----------------------------------------------------------------------------------
+\begin{document}
+
+\maketitle
+
+\section{Summary of Qualification}
+\cvline{}
+	{
+		\begin{itemize}
+			\item 1 year Experience as Linux System Administrator for \href{cs.annauniv.edu}{cs.annauniv.edu}, managing Mail and Web server, along with the website frontend.
+			\item Website Backend developer, basic knowledge of AWS, including AWS EC2 deployment and scaling.
+			\item Fast and adaptive learner, with good knowledge of emerging technologies. 
+			\item Excellent troubleshooting skills, both Hardware and software. Freelance system builder.
+		\end{itemize}}{}{}{}{}
+
+\section{Education}
+	 \cventry{2017 - Expected graduation}{Bachelor Of Engineering}{College of Engineering, Guindy}{}{}{
+			\begin{itemize}
+				 \item \textit{Major:} Computer Science and Engineering
+				 \item \textit{CGPA:} \emph{8.4}
+			\end{itemize}}
+	 \cventry{2013}{Pre-University (10+2)}{TamilNadu Higher Secondary Board}{}{}{
+			\begin{itemize}
+				 \item \textit{Major:} Science (Physics, Chemistry, Math, Computer Science)
+				 \item \textit{Percentage:} \emph{96.4\%.}
+			\end{itemize}}
+
+%\section{Employment History}
+%	 \cventry{Feb13-Dec13}{Qualcomm India Pvt Ltd, \emph{Hyderabad}}{}{}{}{
+%			\begin{itemize}
+%				 \item \textit{Role:} Senior Staff Engineer
+%			\end{itemize}}
+%
+%	 \cventry{Jun04-Jan13}{Texas Instruments India Pvt Ltd, Bangalore}{}{}{}{
+%			\begin{itemize}
+%				 \item \textit{Role:} Principal Engineer, Technical Project Lead, Component Lead
+%			\end{itemize}}
+%
+%	 \cventry{Sep00-Jun04}{Sasken Communication Technologies Ltd, Bangalore}{}{}{}{
+%			\begin{itemize}
+%				 \item \textit{Role:} Software Engineer 
+%			\end{itemize}}
+%
+\cvline  {}{}
+
+\section{Technical Expertise}
+	 \cvline{Languages}{C, Python, C++, Java, PHP, Bash Scripting}
+	 \cvline{OS}{Linux - Ubuntu/Mint, CentOS, All versions of Windows}
+%	 \cvline{Networking}{Basic knowledge of Netwo}
+	% \cvline{Multimedia}{MPEG4, H.264, OpenMAX IL}
+	% \cvline{Android}{StageFright, CameraHAL, HW Composer HAL MongoDB, Hadoop,}
+	\cvline{Tools}{Git, LaTeX}
+%	 \cvline{HW}{OMAP2x/3x/4x/5x}
+	
+\cvline  {}{}
+
+\section{Work Experience} 
+
+    \cventry {Mar15-Now}{Linux SysAdmin and WebDeveloper}{}{}{}{}
+    \subsection{\small\emph{DCSE, College of Engineering Guindy }}
+    \cvlistitem  {Responsible for complete redesign of website}
+    \cvlistitem  {Migrated from an eight year old web/mail server setup to a new one, with near zero down time. }
+	\cvlistitem  {Mail server basic configuration and management.}
+	\cvlistitem{Scheduling and managing regular backups using attic}
+\clearpage
+    \cventry {Feb16}{Website Backend Developer}{}{}{}{}
+    \subsection{\small\emph{aBaCUS, National level symposium}}
+    \cvlistitem  {Developed and maintained a basic backend with user registration, Social Media Login}
+	\cvlistitem{ Implemented Online payment gateway integration with CCAvenue in the website}
+	
+\section{Academic Projects}
+	\cventry {}{Design and analysis of Algorithms}{}{}{}{}
+	\cvlistitem{A simple sudoku solver in C++}
+	\cventry {}{Networks and Communication}{}{}{}{}
+	\cvlistitem{A CLI twitter client using OAuth for authentication}
+	\cventry {}{RFID based toll collection}{}{}{}{}
+	\cvlistitem{Digitizing and vehicle toll, penalty collection infrastructure in PHP + MySQL}
+
+\section{Miscellaneous}
+		\cventry {2013-Now}{NSS Volunteer, Unit IX}{Best Volunteer, 2015-16}{}{}{}
+		\cventry {}{Avid Reader}{}{}{}{}
+		\cventry {}{Organizer \& Keynote Speaker}{}{}{}{}
+		\cvlistitem{Creating awareness among juniors about current trends in IT, opportunities}
+		
+
+%	
+%		\cventry {Apr12-Dec12}{Android based video surveillance for HikVision on OMAP4x}{}{}{}{}
+%    \subsection{\small\emph{Texas Instruments, Role -- Principal Engineer}}
+%		\cvlistitem  {Responsible for bringing around the customer on the feasibility of OMAP platform for video surveillance applications}
+%    \cvlistitem  {Responsible for the product from requirements, software architecture definition, development, to final product qualification}
+%    \cvlistitem  {Developed multi-camera multi-channel video capture}
+%
+%	
+%		\cventry {Apr11-Nov11}{Google-Samsung Galaxy Nexus ICS on OMAP4x}{}{}{}{}
+%    \subsection{\small\emph{Texas Instruments, Role -- Principal Engineer}}	
+%    \cvlistitem  {Led a team of 5 engineers}		
+%		\cvlistitem  {Recognized by both TI and Google for integrating the multimedia subsystem in a significantly redesigned Android platform under severe time constraint and achieving the highest quality standard}
+%    \cvlistitem  {Re-architecture of IPC}
+%    \cvlistitem  {Memory architecture optimization}
+%
+%
+%		\cventry {Feb08-Apr11}{Multimedia framework  on OMAP4x platform}{}{}{}{}
+%    \subsection{\small\emph{Texas Instruments, Role -- Technical Project Lead}}		
+%    \cvlistitem  {Led a team of 12 engineers}
+%    \cvlistitem  {Designed the Distributed OpenMAX Multimedia framework}
+%    \cvlistitem  {Developed a common video decoder architecture which significantly reduced the time required for adding a new video decoder in the system}
+%    \cvlistitem  {Integration of the Distributed Multimedia architecture in Android}
+%    \cvlistitem  {Designed and implemented the Ducati (OMAP4x's MM Subsystem) error recovery framework}
+%    \cvlistitem  {Design and implementation of resource manager}
+%    \cvlistitem  {Contributed to the design and implementation of the Camera-Imaging Framework}
+%
+%		
+%		\cventry {Feb06-Feb08}{Multimedia framework on OMAP103x based feature phones}{}{}{}{}
+%    \subsection{\small\emph{Texas Instruments, Role -- Technical Project Lead}}	
+%    \cvlistitem  {Led a team of 6 engineers}
+%    \cvlistitem  {Proposed and designed a unique OpenMAX implementation which drastically cut down development, testing, conformance, and maintenance effort from 4 months to 1 month for each component.}
+%    \cvlistitem  {Responsible for design, development, integration, and testing of OpenMAX components for all video and imaging codecs.}
+%    \cvlistitem  {Design and development of Screen Services Layer, an efficient tiling window manager for deployment on feature phones.}
+%
+%
+%		\cventry {Jun04-Jan06}{DSP multimedia framework on OMAP2430/3430}{}{}{}{}
+%    \subsection{\small\emph{Texas Instruments, Role -- Component Lead}}
+%    \cvlistitem  {Led a team of 4 engineers}
+%    \cvlistitem  {Designed and developed DSP multimedia framework which cut down the development and maintenance effort from 3 months to 1 month for each component. }
+%    \cvlistitem  {Demonstrated all multimedia uses cases with in two weeks of the OMAP2430 silicon becoming available.}
+%
+%	
+%		\cventry{Aug01-Jun04}{MPEG4/H.264 Video Codec on OMAP15xx}{}{}{}{}
+%    \subsection{\small\emph{Sasken, Role -- Software Engg}}
+%    \cvlistitem  {Designed and implemented optimized algorithms for motion estimation, motion compensation, vlc, and rate control.}
+%    \cvlistitem  {Proposed and led the development of purely C version of the codec running on Windows platform which was bit exact with the production C55x version of the codec. This significantly cut down the effort needed in solving innumerable defects.}
+%	
+%				
+%		\cventry{Sep00-Aug01}{MPEG-7 Content Based Multimedia Retrieval}{}{}{}{}
+%    \subsection{\small\emph{Sasken, Role -- Software Engg}}
+%		\cvlistitem {Implemented Eigen face based face recognition system}
+%		\cvlistitem {Implemented a contour-shape based image retrieval system}
+	
+
+%\section{Honors}
+%	%\cventry {At QCom}{I was given ``QualStar'' award for contributions to the LGE V510 Tablet project}{}{}{}{}
+%
+%	\subsection{\emph{At Qualcomm, I was given ``QualStar'' award for contributions to the LGE V510 Tablet project}}
+%	\cvline  {}{}
+%	%\cventry {At TI}{I have been honored with ``multiple diamond awards'' in my tenure at TI.}{}{}{}{}
+%	
+%	\subsection{\emph{Texas Instruments awards ``Diamond Awards'' to individuals or teams for showcasing exemplary performance towards achieving organizational goals.\newline \newline Specifically:}}
+%  
+%	\cvlistitem{Contribution that is above and beyond the call of duty}
+%	\cvlistitem{Contribution with customer and/or business impact}
+%	\cvlistitem{Consistent, exceptional performance for 2 or more quarters in a row}
+%
+%	\subsection{\emph{I have been honored with ``multiple diamond awards'' in my tenure at TI.}}
+	
+\cvline {}{}
+
+\begin{center}
+\color{gray}\Large{$\nu\epsilon$ $\pi\alpha\beta o \rho$}
+\end{center}
+	
+\end{document}
+
+
+%\section{Experience}
+%\subsection{Vocational}
+%\cventry{year--year}{Job title}{Employer}{City}{}{General description no longer than 1--2 lines.\newline%
+%Detailed achievements:%
+%\begin{itemize}%
+%\item Achievement 1;
+%\item Achievement 2, with sub-achievements:
+%  \begin{itemize}%
+%  \item Sub-achievement (a);
+%  \item Sub-achievement (b), with sub-sub-achievements (don't do this!);
+%    \begin{itemize}
+%    \item Sub-sub-achievement i;
+%    \item Sub-sub-achievement ii;
+%    \item Sub-sub-achievement iii;
+%    \end{itemize}
+%  \item Sub-achievement (c);
+%  \end{itemize}
+%\item Achievement 3.
+%\end{itemize}}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description line 1\newlineDescription line 2}
+%\subsection{Miscellaneous}
+%\cventry{year--year}{Job title}{Employer}{City}{}{Description}
+
+%\section{Languages}
+%\cvlanguage{Language 1}{Skill level}{Comment}
+%\cvlanguage{Language 2}{Skill level}{Comment}
+%\cvlanguage{Language 3}{Skill level}{Comment}
+
+%\section{Computer skills}
+%\cvcomputer{category 1}{XXX, YYY, ZZZ}{category 4}{XXX, YYY, ZZZ}
+%\cvcomputer{category 2}{XXX, YYY, ZZZ}{category 5}{XXX, YYY, ZZZ}
+%\cvcomputer{category 3}{XXX, YYY, ZZZ}{category 6}{XXX, YYY, ZZZ}
+
+%\section{Interests}
+%\cvline{hobby 1}{\small Description}
+%\cvline{hobby 2}{\small Description}
+%\cvline{hobby 3}{\small Description}
+
+%\section{Extra 1}
+%\cvlistitem{Item 1}
+%\cvlistitem{Item 2}
+%\cvlistitem[+]{Item 3}            % optional other symbol
+
+%\renewcommand{\listitemsymbol}{-} % change the symbol for lists
+
+%\section{Extra 2}
+%\cvlistdoubleitem{Item 1}{Item 4}
+%\cvlistdoubleitem{Item 2}{Item 5 \cite{book1}}
+%\cvlistdoubleitem{Item 3}{}
+
+% Publications from a BibTeX file without multibib\renewcommand*{\bibliographyitemlabel}{\@biblabel{\arabic{enumiv}}}% for BibTeX numerical labels
+%\nocite{*}
+%\bibliographystyle{plain}
+%\bibliography{publications}       % 'publications' is the name of a BibTeX file
+
+% Publications from a BibTeX file using the multibib package
+%\section{Publications}
+%\nocitebook{book1,book2}
+%\bibliographystylebook{plain}
+%\bibliographybook{publications}   % 'publications' is the name of a BibTeX file
+%\nocitemisc{misc1,misc2,misc3}
+%\bibliographystylemisc{plain}
+%\bibliographymisc{publications}   % 'publications' is the name of a BibTeX file
+
+
+%% end of file `template_en.tex'.
